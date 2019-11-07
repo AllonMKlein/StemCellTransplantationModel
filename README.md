@@ -1,5 +1,5 @@
 # StemCellTransplantationModel
-# StemCellTransplantationModel
-# StemCellTransplantationModel
-# StemCellTransplantationModel
-# StemCellTransplantationModel
+
+This repository presents the python code for analyzing the clonal data for stem cell transplantation, in which we try to understand how the clonal output from the first stem cell transplantation predicts the outcome for the second transplantation.  The outcome includes the clonal ID for individual cells, and their transcriptome. We only keep HSCs and LSKs for downstream measurement. See our paper for more details. 
+
+We use *Combining T1 T2.ipynb* to combine clonal data from the first transplantation and second transplantation, then use *clonal_annotation_T1T2_191101.ipynb* for annotating the clones, i.e., generating the clonal ID for a given cell. In this step, there is a parameter *dropout*. If it is set to be zero, then there is no dropout, and the code outputs data into a folder called *NoDropoutCorrection*, otherwise, the data is generated in a folder called *DropoutCorrection*.  Depending which dataset to use for downstream analysis,  we can either use *Clonal_data_statistics_summary_NoDropoutCorrection.ipynb* or *Clonal_data_statistics_summary_WithDropoutCorrection.ipynb* for analyzing the clonal data, most for generating clonal correlations. These two notebook are the same, except different input dataset.  Finally, to generate statistical confidence about these clonal correlations, we use a generative model that is described in the theory supplement in our paper. This is implemented in *Simulate_StemCellDynamics_for_pValue_NoDropoutCorrection.ipynb* or *Simulate_StemCellDynamics_for_pValue_WithDropoutCorrection.ipynb* for different source of data. 
