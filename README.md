@@ -7,8 +7,8 @@ There are three components of our code, and they need to be run in the following
 ## Generating the clonal annotation 
  - *Combining T1 T2.ipynb*, to combine clonal data from the first transplantation and second transplantation. This can be skipped if a combined dataset already exists, which is the case here. 
  - *clonal_annotation_T1T2_191101.ipynb*, for generating the clonal ID for a given cell. In this step, there is a parameter *dropout*. If it is set to be zero, then there is no clonal barcode dropout, and the notebook outputs data into a folder called *NoDropoutCorrection*, otherwise, the data is generated in a folder called *DropoutCorrection*. 
- 
- The clonal annotation code is adapted from the LARRY preprocessing notebook by Caleb Weinreb, but with an improved criterion for clonal clustering.  To run this notebook, there should be a folder *Combined_T1T2* in the directory of this notebook, and the following 3 files that combine the first and second transplantation dataset should be in this folder
+ 
+ The clonal annotation code is adapted from the LARRY preprocessing notebook by Caleb Weinreb, but with an improved criterion for clonal clustering.  To run this notebook, there should be a folder *Combined_T1T2* in the directory of this notebook, and the following 3 files that combine the first and second transplantation dataset should be in this folder
  - T1T2_cell_bcs_flat.txt: A list of cell barcodes, one barcode name for each cell
  - T1T2_samp_id_flat.txt: A list of sample id's, say T1_HSC or T2_Kit, one id for each cell
  - T1T2_LARRY_sorted_and_filtered_barcodes.fastq.gz: A fastq file with raw reads, obtained from target sequencing at the clonal barcode regime
@@ -21,7 +21,8 @@ In this repository, we have put in *T1T2_cell_bcs_flat.txt* and *T1T2_samp_id_fl
 - *Clonal_data_statistics_summary_WithDropoutCorrection.ipynb* 
  These two notebooks are the same, except for different input datasets.  The data and figures will be stored.
  
- ## Computing statistical significance
+
+## Computing statistical significance
  Finally, to generate statistical confidence about these clonal correlations, we use a generative graphic model inferred from the data,  as described in the theory supplement in our paper. Depending on the input data, this is implemented in 
 - *Simulate_StemCellDynamics_for_pValue_NoDropoutCorrection.ipynb* 
 - *Simulate_StemCellDynamics_for_pValue_WithDropoutCorrection.ipynb* 
