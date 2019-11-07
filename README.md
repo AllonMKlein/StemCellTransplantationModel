@@ -12,7 +12,7 @@ There are three components of our code, and they need to be run in order to make
  -T1T2_cell_bcs_flat.txt: A list of cell barcodes, one barcode name for each cell
 -T1T2_samp_id_flat.txt: A list of sample id's, say T1_HSC or T2_Kit, one id for each cell
 - T1T2_LARRY_sorted_and_filtered_barcodes.fastq.gz: A fastq file with raw reads, obtained from target sequencing at the clonal barcode regime
-In this repository, we have put in *T1T2_cell_bcs_flat.txt* and *T1T2_samp_id_flat.txt*, but not *T1T2_LARRY_sorted_and_filtered_barcodes.fastq.gz*, which is too large. 
+In this repository, we have put in *T1T2_cell_bcs_flat.txt* and *T1T2_samp_id_flat.txt*, but not *T1T2_LARRY_sorted_and_filtered_barcodes.fastq.gz*, which is too large. This file can be accessed here: https://www.dropbox.com/s/h31y0fytmsj6zku/T1T2_LARRY_sorted_and_filtered_barcodes.fastq.gz?dl=0
 
  ## Performing clonal analysis
  Depending which dataset to use for downstream analysis,  we can one of the following notebook for analyzing the clonal data, mostly for generating clonal correlations.
