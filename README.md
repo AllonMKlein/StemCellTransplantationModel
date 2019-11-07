@@ -5,7 +5,7 @@ This repository presents the python code for analyzing the clonal data for stem 
 There are three components of our code, and they need to be run in the following order to make sure that each notebook has proper input from the upstream computation. Each notebook has its own explanation within the notebook. 
 
 ## Generating the clonal annotation 
- - *Combining T1 T2.ipynb*, to combine clonal data from the first transplantation and second transplantation. This can be skipped if a combined dataset already exists, which is the case here. 
+ - *Combining T1 T2.ipynb*, to combine clonal data from the first transplantation and second transplantation. This can be skipped if a combined dataset already exists, which is the case here. 
  - *clonal_annotation_T1T2_191101.ipynb*, for generating the clonal ID for a given cell. In this step, there is a parameter *dropout*. If it is set to be zero, then there is no clonal barcode dropout, and the notebook outputs data into a folder called *NoDropoutCorrection*, otherwise, the data is generated in a folder called *DropoutCorrection*. 
  
 
