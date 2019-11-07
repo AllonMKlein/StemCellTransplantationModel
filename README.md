@@ -11,11 +11,11 @@ There are three components of our code, and they need to be run in the following
 
  ## Performing clonal analysis
  Depending on which dataset to use for downstream analysis,  we can use one of the following notebooks for analyzing the clonal data, mostly for generating clonal correlations.
- - *Clonal_data_statistics_summary_NoDropoutCorrection.ipynb* 
- - *Clonal_data_statistics_summary_WithDropoutCorrection.ipynb* 
+- *Clonal_data_statistics_summary_NoDropoutCorrection.ipynb* 
+- *Clonal_data_statistics_summary_WithDropoutCorrection.ipynb* 
  These two notebooks are the same, except for different input datasets.  The data and figures will be stored.
  
  ## Computing statistical significance
  Finally, to generate statistical confidence about these clonal correlations, we use a generative graphic model inferred from the data,  as described in the theory supplement in our paper. Depending on the input data, this is implemented in 
- - *Simulate_StemCellDynamics_for_pValue_NoDropoutCorrection.ipynb* 
- - *Simulate_StemCellDynamics_for_pValue_WithDropoutCorrection.ipynb* 
+- *Simulate_StemCellDynamics_for_pValue_NoDropoutCorrection.ipynb* 
+- *Simulate_StemCellDynamics_for_pValue_WithDropoutCorrection.ipynb* 
