@@ -4,7 +4,10 @@ This repository presents the python code for analyzing the clonal data for stem 
 
 The repository contains the following notebooks
  - *Combining T1 T2.ipynb*, to combine clonal data from the first transplantation and second transplantation. 
- - *clonal_annotation_T1T2_191101.ipynb*, for generating the clonal ID for a given cell. In this step, there is a parameter *dropout*. If it is set to be zero, then there is no dropout, and the code outputs data into a folder called *NoDropoutCorrection*, otherwise, the data is generated in a folder called *DropoutCorrection*.  To make this notebook to work, we assume that 
+ - *clonal_annotation_T1T2_191101.ipynb*, for generating the clonal ID for a given cell. In this step, there is a parameter *dropout*. If it is set to be zero, then there is no dropout, and the code outputs data into a folder called *NoDropoutCorrection*, otherwise, the data is generated in a folder called *DropoutCorrection*.  To run this notebook, there should be a folder Combined_T1T2 in the directory of this notebook, and the following 3 files should be in this folder
+ -- T1T2_cell_bcs_flat.txt: A list of cell barcodes, one barcode name for each cell
+-- T1T2_samp_id_flat.txt: A list of sample id's, say T1_HSC or T2_Kit, one id for each cell
+-- T1T2_LARRY_sorted_and_filtered_barcodes.fastq.gz: A fastq file with raw reads, obtained from target sequencing at the clonal barcode regime
  
  Depending which dataset to use for downstream analysis,  we can one of the following notebook for analyzing the clonal data, mostly for generating clonal correlations.
  - *Clonal_data_statistics_summary_NoDropoutCorrection.ipynb* 
